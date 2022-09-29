@@ -1,0 +1,1467 @@
+/* Font Inter */
+@import url('http://fonts.cdnfonts.com/css/inter');
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    font-family: 'Inter', sans-serif;                                          
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Start */
+#biologica-nav nav{
+    padding: 60px 0 35px 0;
+}
+#biologica-nav nav .nav-spacing{
+    margin: 0 25px;
+}
+#biologica-nav .bg-nav{
+    background-color: #00063c;
+}
+#biologica-nav .navbar-brand{
+    width: 50%;
+}
+#biologica-nav .navbar-brand img{
+    width: 50%;
+}
+#biologica-nav .nav-item .nav-link{
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+#biologica-nav .products-dropdown {
+    background-color: #faf9f9;
+    position: absolute;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+#biologica-nav .products-dropdown a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 320;
+    font-style: 0 200 0 0;
+    font-stretch: expanded;
+    color: #808080;
+    border-bottom: 0.9px solid #acacac;
+    padding: 14px 15px;
+    margin: 0 auto;
+    width: 150%;
+    cursor: pointer;
+    background-color: #faf9f9 !important;
+    
+}
+#biologica-nav .products-dropdown a:hover {
+    transition: all ease-in-out 0.3s;
+    color: #060607 !important;
+    background-color: rgb(229, 229, 231) !important;
+}
+.nav-item:hover .products-dropdown {
+    transition: all ease-in-out 0.3s;
+    display: flex !important;
+}
+
+#biologica-nav .nav-item .nav-link:hover{
+    transition: all ease-in-out 0.3s;
+    color: #fff;
+}
+#biologica-nav .nav-item .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #5b5f88;
+    transition: width .3s;
+}
+#biologica-nav .nav-item .nav-link:hover::after {
+    width: 100%;
+}
+#biologica-nav .nav-item .nav-link.active{
+    transition: all ease-in-out 0.3s;
+    color: #09138b;
+}
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+	.navbar .nav-item:hover .nav-link{ color: #fff;  }
+	.navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+	.navbar .dropdown-menu.fade-up{ top:180%;  }
+	.navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+}
+/* Navbar End */
+
+
+
+/* Mobile Navbar Start */
+/* The side navigation menu */
+#mySidenav .row{
+    padding: 19.4px 0;
+    background: linear-gradient(to bottom right, #0e0f1b, #0e0f1b, #0e1836, #0e0f1b);
+}
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+#mySidenav .products-dropdown {
+    background-color: #faf9f9;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#mySidenav .products-dropdown a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #808080;
+    border-bottom: 1px solid #808080;
+    padding: 10px 15px;
+    margin: 0 0 0 40px;
+    width: 100%;
+    cursor: pointer;
+    background-color: #faf9f9 !important;
+    
+}
+#mySidenav .products-dropdown a:hover {
+    transition: all ease-in-out 0.3s;
+    color: #00063c !important;
+    background-color: rgb(229, 229, 231) !important;
+}
+/* The navigation menu links */
+#mySidenav .nav-padding{
+    margin-top: 50px; 
+}
+.sidenav .nav-link {
+    padding: 8px 8px 8px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #575757;
+    display: block;
+    transition: 0.3s
+}
+#mySidenav .nav-link:hover{
+    transition: all ease-in-out 0.3s;
+    color: #09138b;
+}
+#mySidenav .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #09138b;
+    transition: width .3s;
+}
+#mySidenav .nav-link:hover::after {
+    width: 50px;
+}
+#mySidenav .nav-link.active{
+    transition: all ease-in-out 0.3s;
+    color: #09138b;
+}
+
+/* SideNav Social Icons */
+#mySidenav .sidenav-social-icons{
+    margin: 50px 0 30px 0;
+    padding: 8px 8px 8px 20px;
+}
+
+#mySidenav .sidenav-social-icons a.icons-space-1{
+    border-radius: 5px;
+    text-decoration: none;
+    color: #00063c;
+    background-color: #fff;
+    border: 2px solid #00063c;
+    padding: 8px 3px 6px 6px;
+}
+#mySidenav .sidenav-social-icons a.icons-space-1:hover{
+    transition: all ease-in-out 0.3s;
+    border: 2px solid #006EAC;
+    color: #fff;
+    background-color: #006EAC;
+}
+
+#mySidenav .sidenav-social-icons a.icons-space-2{
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    border: 2px solid #00063c;
+    padding: 8px 5.5px 5px 8.5px;
+    margin: 0 10px 0 10px;
+}
+#mySidenav .sidenav-social-icons a.icons-space-2:hover{
+    transition: all ease-in-out 0.3s;
+    border: 2px solid #38529A;
+    color: #fff;
+    background-color: #38529A;
+}
+
+#mySidenav .sidenav-social-icons a.icons-space-3{
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    border: 2px solid #0e1836;
+    padding: 8px 7px 6px 7px;
+}
+#mySidenav .sidenav-social-icons a.icons-space-3:hover{
+    transition: all ease-in-out 0.3s;
+    border: 2px solid #28CD41;
+    color: #fff;
+    background-color: #28CD41;
+}
+
+#mySidenav .sidenav-social-icons i{
+    font-size: 20px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.closebtn {
+    position: absolute;
+    top: 0;
+    color: #fff;
+    right: 30px;
+    font-size: 30px !important;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+/* Mobile Navbar End */
+
+
+
+/* Home Page Start */
+
+/* Humanity */
+#home-section{
+    padding-top: 50px;
+}
+#home-section .home-hero-section .col-lg-7{
+    margin-bottom: 70px;
+    margin-top: 5px;
+    padding-top: 2px;
+    padding-right: 18px;
+    margin-left: -6px;
+    
+    
+}
+#home-section .home-hero-section .humanity{
+    display: grid;
+    align-items: flex-end;
+    border-radius: 15px;
+    padding: 0 50px 30px 50px;
+    height: 98% ;
+    width: 104%; 
+    color: #fff;
+    background: linear-gradient(to bottom right, #0e0f1b, #0e0f1b, #0e1836, #0e0f1b);
+}
+#home-section .home-hero-section .humanity .text h2{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#home-section .home-hero-section .humanity .text h5{
+    width: 75%;
+    font-weight: 400;
+}
+
+/* Updated */
+#home-section .home-hero-section .update{
+    margin-bottom: 70px;
+}
+#home-section .home-hero-section .update .image img{
+    width: 100%;
+    height: 110%;
+}
+
+/* Concept Text */
+#home-section .concept-text{
+    text-align: justify;
+    margin-bottom: 50px;
+    color: rgb(104, 104, 104);
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    font-weight: 5px;
+    
+}
+#home-section .concept-text h5{
+    font-weight: 310;
+    line-height: 1.4;
+    
+}
+
+
+/* Cards */
+#home-section .cards .row .col-lg-4{
+    margin-bottom: 60px;
+}
+/* Card-1 */
+#home-section .cards .card-shadow-1{
+    width: 85%;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgb(131, 131, 131);
+    background-color: #fff;
+}
+#home-section .cards .card-1{
+    padding: 0 30px;
+}
+#home-section .cards .card-1 img{
+    margin: 50px 0;
+    width: 45%;
+}
+#home-section .cards .card-1 .text h2{
+    padding: 0 0 57px 0;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+#home-section .cards .color-div{
+    margin-top: -20px;
+    background-color: #050b50;
+    height: 30px;
+    border-radius: 0 0 15px 15px;
+}
+
+/* Card-2 */
+#home-section .cards .card-shadow-2{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgb(131, 131, 131);
+    background-color: #fff;
+}
+#home-section .cards .card-2{
+    padding: 0 25px;
+}
+#home-section .cards .card-2 img{
+    margin: 50px 0;
+    width: 50%;
+}
+#home-section .cards .card-2 .text h2{
+    padding: 0 0 50px 0;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+#home-section .cards .color-div{
+    margin-top: -20px;
+    background-color: #050b50;
+    height: 30px;
+    border-radius: 0 0 15px 15px;
+}
+
+/* Card-3 */
+#home-section .cards .card-shadow-3{
+    width: 85%;
+    float: right;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgb(131, 131, 131);
+    background-color: #fff;
+}
+#home-section .cards .card-3{
+    padding: 0 30px;
+}
+#home-section .cards .card-3 img{
+    margin: 50px 0;
+    width: 50%;
+}
+#home-section .cards .card-3 .text h2{
+    padding: 35px 0 47px 0;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+#home-section .cards .color-div{
+    margin-top: -20px;
+    background-color: #050b50;
+    height: 30px;
+    border-radius: 0 0 15px 15px;
+}
+
+/* Testing Text */
+#home-section .testing-text{
+    margin-bottom: 70px;
+}
+#home-section .testing-text h1{
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font-weight: 800;
+    font-size: 45px ;
+}
+#home-section .testing-text h5{
+    color: rgb(104, 104, 104);
+    text-align: justify;
+    font-weight: 310;
+    line-height: 1.4;
+}
+
+/* Capibilty Cards */
+
+/* Card-1 */
+#home-section .capibilty-cards .card-1{
+    padding: 0 40px;
+    border-radius: 5px;
+    border: 3px solid #00063c;
+}
+#home-section .capibilty-cards .card-1 img{
+    width: 40%;
+    margin: 50px 0;
+}
+#home-section .capibilty-cards .card-1 .text h6{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+#home-section .capibilty-cards .card-1 .text h3{
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+#home-section .capibilty-cards .card-1 .text .home-paragraph{
+    padding-bottom: 30px;
+}
+#home-section .capibilty-cards .card-1 .text .home-paragraph-less h5{
+    font-weight: 310;
+    margin-bottom: 126px;
+    color: rgb(104, 104, 104);
+    line-height: 1.4;
+    font-size: 19px;
+}
+#home-section .capibilty-cards .card-1 .text .home-paragraph a{
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+    margin-bottom: 30px;
+    color: #00063c;
+}
+#home-section .capibilty-cards .card-1 .text .home-paragraph a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #00063c;
+    transition: width .3s;
+}
+#home-section .capibilty-cards .card-1 .text .home-paragraph a:hover::after {
+    width: 50px;
+}
+
+/* Card-2 */
+#home-section .capibilty-cards .card-2{
+    padding: 0 40px;
+    border-radius: 5px;
+    border: 3px solid #00063c;
+}
+#home-section .capibilty-cards .card-2 img{
+    width: 40%;
+    margin: 54px 0;
+}
+#home-section .capibilty-cards .card-2 .text h6{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+#home-section .capibilty-cards .card-2 .text h3{
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+#home-section .capibilty-cards .card-2 .text .home-paragraph{
+    padding-bottom: 30px;
+}
+#home-section .capibilty-cards .card-2 .text .home-paragraph-less h5{
+    font-weight: 310;
+    margin-bottom: 32px;
+    color: rgb(104, 104, 104);
+    line-height: 1.4;
+    font-size: 18px;
+}
+#home-section .capibilty-cards .card-2 .text .home-paragraph a{
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 6px 0 30px 0;
+    color: #00063c;
+}
+#home-section .capibilty-cards .card-2 .text .home-paragraph a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #00063c;
+    transition: width .3s;
+}
+#home-section .capibilty-cards .card-2 .text .home-paragraph a:hover::after {
+    width: 50px;
+}
+
+/* Card-3 */
+#home-section .capibilty-cards .card-3{
+    padding: 0 77.87px;
+    border-radius: 5px;
+    border: 3px solid #00063c;
+}
+#home-section .capibilty-cards .card-3 img{
+    width: 40%;
+    margin: 46px 0;
+}
+#home-section .capibilty-cards .card-3 .text h6{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    margin-top: 35px;
+}
+#home-section .capibilty-cards .card-3 .text h3{
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-bottom: 30px;
+    
+}
+#home-section .capibilty-cards .card-3 .text .home-paragraph{
+    padding-bottom: 30px;
+}
+#home-section .capibilty-cards .card-3 .text .home-paragraph-less h5{
+    font-weight: 400;
+    font-size: 17.5px;
+    padding-top: 20px;
+    padding-left: 1px;
+    padding-left: 1px;
+    margin-bottom: 34px;
+    color: rgb(104, 104, 104);
+    line-height: 1.4;
+}
+#home-section .capibilty-cards .card-3 .text .home-paragraph a{
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 30px 0 30px 0;
+    color: #00063c;
+}
+#home-section .capibilty-cards .card-3 .text .home-paragraph a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #00063c;
+    transition: width .3s;
+}
+#home-section .capibilty-cards .card-3 .text .home-paragraph a:hover::after {
+    width: 50px;
+}
+
+/* Form Text */
+#home-section .home-form .form-text h1{
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: 900;
+}
+#home-section .form-text h5{
+    text-align: justify;
+    font-weight: 310;
+    line-height: 1.4;
+}
+
+/* Form */
+#home-section .home-form .form label{
+    font-weight: 500;
+}
+#home-section .home-form .form input{
+    background-color: rgb(220, 220, 220);
+}
+#home-section .home-form .form textarea{
+    background-color: rgb(220, 220, 220);
+}
+#home-section .home-form .form hr{
+    background-color: #050b50;
+    height: 5px;
+}
+#home-section .home-form .form button{
+    border-radius: 15px;
+    padding: 15px 0;
+    width: 100%;
+    font-weight: 500;
+    border: 2px solid #050b50;
+    color: #fff;
+    background-color: #050b50;
+}
+#home-section .home-form .form button:hover{
+    transition: all ease-in-out 0.3s;
+    border: 2px solid #050b50;
+    color: #050b50;
+    background-color: #fff;
+}
+
+/* Improve Health */
+#home-section .improve-health img{
+    width: 100%;
+}
+#home-section .improve-health .image{
+    position: relative;
+}
+#home-section .improve-health .image .text{
+    position: absolute;
+    top: 28%;
+    left: 8%;
+    right: 49.4%;
+}
+#home-section .improve-health .image .text h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 50px;
+    text-align: right;
+}
+#home-section .improve-health .image .text .hr1{
+    float: right;
+    height: 15px;
+    width: 27.8%;
+    background-color: #050b50;
+}
+#home-section .improve-health .image .text .hr2{
+    float: right;
+    height: 15px;
+    width: 27.8%;
+    background-color: #050b50;
+}
+
+/* Home Page End */
+
+
+
+/* About Us Page Start */
+
+/* Breadcrumb Start */
+#biologica-breadcrumb .breadcrumb{
+    margin-top: 50px;
+    padding-left: 0;
+    background-color: transparent;
+}
+#biologica-breadcrumb .breadcrumb .breadcrumb-item a{
+    color: #000;
+}
+#biologica-breadcrumb .breadcrumb .active{
+    color: #007bff;
+}
+/* Breadcrumb End */
+
+/* Content Section Start */
+
+/* About Heading */
+#biologica-content-section .about-heading h1{
+    text-transform: uppercase;
+    font-weight: 650;
+    font-size: 40px;
+}
+
+/* About Paragraph */
+#biologica-content-section .about-paragraph .about-paragraph-less p{
+    margin-top: 30px;
+    color: #808080;
+    font-size: 18px;
+    text-align: justify;
+}
+#biologica-content-section .about-paragraph-more {
+    display: none;
+}
+#biologica-content-section .about-paragraph .seeless{
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+}
+#biologica-content-section .about-paragraph .seeless::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1.3px;
+    background: #00063c;
+    transition: width .3s;
+}
+#biologica-content-section .about-paragraph .seeless:hover::after {
+    width: 50px;
+}
+
+/* About Image */
+#biologica-content-section .about-img img{
+    margin: 50px 0;
+    width: 100%;
+}
+
+/* Content Section End */
+
+/* About Us Page End */
+
+
+
+/* Contact Us Page Start */
+
+/* Contact Banner Start */
+#contact-banner .col-md-6{
+    padding: 0;
+}
+
+/* Contact Text */
+#contact-banner .banner-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: linear-gradient(to bottom right, #0e0f1b, #0e1836, #0e0f1b);
+}
+#contact-banner .banner-text .text{
+    padding: 0 50px;
+    color: #fff;
+}
+#contact-banner .banner-text .text h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+#contact-banner .banner-text .text h5{
+    font-weight: 500;
+}
+#contact-banner .banner-text .text hr{
+    width: 70%;
+    height: 3px;
+    background: linear-gradient(to right,yellow, orange, red, violet, #4792e5, #0adaa8);
+}
+
+/* Contact Image */
+#contact-banner .banner-image img{
+    width: 100%;
+}
+/* Contact Banner End */
+
+/* Contact Form Start */
+
+/* Contact Form Heading */
+#biologica-content-section .contact-heading h1{
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 650;
+    font-size: 40px;
+}
+#biologica-content-section .contact-heading h6{
+    color: #808080;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+/* Contact Form */
+#biologica-content-section .contact-form .form label{
+    color: #e6e6e6;
+}
+#biologica-content-section .contact-form .form{
+    padding: 0 30px;
+    height: 100%;
+    color: #fff;
+    border-radius: 3px;
+    background-color: #1e1e1e;
+}
+#biologica-content-section .contact-form .form h1{
+    padding: 30px 0;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+#biologica-content-section .contact-form .form .form-btn{
+    margin-bottom: 30px;
+    float: right;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 12px 50px;
+    color: #fff;
+    background-color: #09138b;
+}
+#biologica-content-section .contact-form .form .form-btn:hover{
+    transition: all ease-in-out 0.3s;
+    color: #fff;
+    background-color: #0d1458;
+}
+
+/* Contact Location */
+#get-map{
+    height: 100%;
+}
+#biologica-content-section .contact-location{
+    height: 10%;
+    padding: 0 30px;
+    border-radius: 3px;
+    color: #fff;
+}
+#biologica-content-section .contact-location h1{
+    padding: 30px 0;
+    color: rgb(8, 7, 7);
+    font-weight: 650;
+    font-size: 40px;
+    padding-left: 80px;
+    text-transform: uppercase;
+    /*text-decoration: 8px underline ;*/
+    
+}
+#get-map img{
+    width: 100%;
+    height: 456px;
+}
+#get-map iframe{
+    width: 100%;
+    height: 580px;
+}
+#get-map .add{
+    display: none;
+}
+#biologica-content-section .contact-location .get-btn{
+    background-color: transparent;
+    border: 2px solid #00063c;
+    color: #00063c;
+    padding: 10.5px 22px;
+    margin: 0px 0 0 95px;
+    font-size: 20px;
+    font-weight: 600;
+    float: center;
+}
+#biologica-content-section .contact-location .get-btn:hover{
+    background-color: #09138b;
+    border: 2px solid #09138b;
+    color: #fff;
+}
+
+/* Contact Form End */
+
+/* Contact Us Page End */
+
+
+
+/* Product Page Start */
+
+/* Product Heading */
+#biologica-content-section .product-heading h1{
+    font-weight: 650;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+}
+#biologica-content-section .product-heading p{
+    text-align: justify;
+    font-size: 18px;
+    color: #808080;
+    margin: 0 0 50px 0;
+}
+
+/* Product Section 1 */
+#biologica-content-section .product-1{
+    margin: 0 0 30px 0;
+}
+#biologica-content-section .product-1 img{
+    width: 100%;
+    background-color: #f5f6f8;
+    border-radius: 12px 0 0 12px;
+}
+#biologica-content-section .product-1-text{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 40px;
+    background-color: #ededf3;
+    border-radius: 0 12px 12px 0;
+}
+#biologica-content-section .product-1-text .text h5{
+    color: #adadad;
+    font-weight: 350;
+    letter-spacing: 5px;
+    text-transform: uppercase;  
+    margin: 0 0 10px 0;
+    line-height: 1.4;
+    font-size: 18px;
+}
+#biologica-content-section .product-1-text .text h1{
+    text-transform: uppercase;
+    font-weight: 650;
+    margin: 0 0 30px 0;
+    padding-right: 200px;
+    
+}
+#biologica-content-section .product-1-text .text p{
+    color: rgb(101, 101, 98);
+    font-size: 17px;
+    font-weight: 310;
+    text-align: justify;
+    line-height: 1.4;
+}
+#biologica-content-section .product-1-text .text a{
+    color: #0c1564;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+}
+#biologica-content-section .product-1-text .text a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1.3px;
+    background: #00063c;
+    transition: width .3s;
+}
+#biologica-content-section .product-1-text .text a:hover::after {
+    width: 50px;
+}
+
+/* Product Section 2 */
+#biologica-content-section .product-2{
+    margin: 0 0 30px 0;
+}
+#biologica-content-section .product-2 img{
+    width: 100%;
+    background-color: #242424;
+    border-radius: 0 12px 12px 0;
+}
+#biologica-content-section .product-2-text{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 40px;
+    color: #fff;
+    background-color: #242424;
+    border-radius: 12px 0 0 12px;
+}
+#biologica-content-section .product-2-text .text h5{
+    color: #adadad;
+    font-weight: 350;
+    letter-spacing: 5px;
+    text-transform: uppercase;  
+    margin: 0 0 10px 0;
+    line-height: 1.4;
+    font-size: 18px;
+}
+#biologica-content-section .product-2-text .text h1{
+    text-transform: uppercase;
+    font-weight:  650;
+    margin: 0 0 30px 0;
+    padding-right: 200px;
+        
+}
+#biologica-content-section .product-2-text .text p{
+    color: #ededf3;
+    font-size: 17px;
+    font-weight: 310;
+    text-align: justify;
+    line-height: 1.4;    
+}
+#biologica-content-section .product-2-text .text a{
+    color: #5b5f88;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+}
+#biologica-content-section .product-2-text .text a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1.3px;
+    background: #5b5f88;
+    transition: width .3s;
+}
+#biologica-content-section .product-2-text .text a:hover::after {
+    width: 50px;
+}
+
+/* Product Section 3 */
+#biologica-content-section .product-3{
+    margin: 0 0 30px 0;
+}
+#biologica-content-section .product-3 img{
+    width: 100%;
+    background-color: #f5f6f8;
+    border-radius: 12px 0 0 12px;
+}
+#biologica-content-section .product-3-text{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 40px;
+    color: #fff;
+    background-color: #00063c;
+    border-radius: 0 12px 12px 0;
+}
+#biologica-content-section .product-3-text .text h5{
+    color: #adadad;
+    font-weight: 350;
+    letter-spacing: 5px;
+    text-transform: uppercase;  
+    margin: 0 0 10px 0;
+    line-height: 1.4;
+    font-size: 18px;
+}
+#biologica-content-section .product-3-text .text h1{
+    text-transform: uppercase;
+    font-weight:  650;
+    margin: 0 0 30px 0;
+    padding-right: 200px;
+}
+#biologica-content-section .product-3-text .text p{
+    font-size: 17px;
+    font-weight: 310;
+    text-align: justify;
+    line-height: 1.5;
+}
+#biologica-content-section .product-3-text .text a{
+    color: #686ea8;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+}
+#biologica-content-section .product-3-text .text a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1.3px;
+    background: #5b5f88;
+    transition: width .3s;
+}
+#biologica-content-section .product-3-text .text a:hover::after {
+    width: 50px;
+}
+
+/* Product Section 4 */
+#biologica-content-section .product-4{
+    margin: 0 0 30px 0;
+}
+#biologica-content-section .product-4 img{
+    width: 100%;
+    background-color: #f5f6f8;
+    border-radius: 0 12px 12px 0;
+    
+
+
+} 
+#biologica-content-section .product-4-text{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 40px;
+    background-color: #ededf3;
+    border-radius: 12px 0 0 12px;
+}
+#biologica-content-section .product-4-text .text h5{
+    color: #adadad;
+    font-weight: 80px;
+    letter-spacing: 5px;
+    text-transform: uppercase;  
+    margin: 0 0 10px 0;
+    line-height: 1.4;
+    font-size: 18px;
+}
+#biologica-content-section .product-4-text .text h1{
+    text-transform: uppercase;
+    font-weight:  650;
+    margin: 0 0 30px 0;
+    padding-right: 200px;
+ 
+}
+#biologica-content-section .product-4-text .text p{
+    color: rgb(101, 101, 98);
+    font-size: 16px;
+    font-weight: 310;
+    text-align: justify;
+    line-height: 1.4;
+}
+#biologica-content-section .product-4-text .text a{
+    color: #0c1564;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+}
+#biologica-content-section .product-4-text .text a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1.3px;
+    background: #00063c;
+    transition: width .3s;
+}
+#biologica-content-section .product-4-text .text a:hover::after {
+    width: 50px;
+}
+
+/* Product Section 5 */
+#biologica-content-section .product-5{
+    margin: 0 0 30px 0;
+}
+#biologica-content-section .product-5 img{
+    width: 100%;
+    background-color: #f5f6f8;
+    border-radius: 12px 0 0 12px;
+}
+#biologica-content-section .product-5-text{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 40px;
+    color: #fff;
+    background-color: #050b50;
+    border-radius: 0 12px 12px 0;
+}
+#biologica-content-section .product-5-text .text h5{
+    color: #adadad;
+    font-weight: 350;
+    letter-spacing: 5px;
+    text-transform: uppercase;  
+    margin: 0 0 10px 0;
+    line-height: 1.4;
+    font-size: 18px;
+}
+#biologica-content-section .product-5-text .text h1{
+    text-transform: uppercase;
+    font-weight:  650;
+    margin: 0 0 30px 0;
+}
+#biologica-content-section .product-5-text .text p{
+    color: #e6e6e6;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: justify;
+}
+#biologica-content-section .product-5-text .text a{
+    color: #686ea8;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+}
+#biologica-content-section .product-5-text .text a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1.3px;
+    background: #5b5f88;
+    transition: width .3s;
+}
+#biologica-content-section .product-5-text .text a:hover::after {
+    width: 50px;
+}
+
+/* Product Section 6 */
+#biologica-content-section .product-6{
+    margin: 0;
+}
+#biologica-content-section .product-6 img{
+    width: 100%;
+    background-color: #242424;
+    border-radius: 0 12px 12px 0;
+    margin-bottom: 0.25px;
+  
+}
+#biologica-content-section .product-6-text{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 40px;
+    color: #fff;
+    background-color: #242424;
+    border-radius: 12px 0 0 12px;
+}
+#biologica-content-section .product-6-text .text h5{
+    color: #adadad;
+    font-weight: 350;
+    letter-spacing: 5px;
+    text-transform: uppercase;  
+    margin: 0 0 10px 0;
+    line-height: 1.4;
+    font-size: 18px;
+}
+#biologica-content-section .product-6-text .text h2{
+    text-transform: uppercase;
+    font-weight:  650;
+    margin: 0 0 30x 0;
+}
+#biologica-content-section .product-6-text .text p{
+    color: #e6e6e6;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: justify;
+}
+#biologica-content-section .product-6-text .text a{
+    color: #5b5f88;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+}
+#biologica-content-section .product-6-text .text a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1.3px;
+    background: #5b5f88;
+    transition: width .3s;
+}
+#biologica-content-section .product-6-text .text a:hover::after {
+    width: 50px;
+}
+
+/* Global Health */
+#biologica-content-section .global-health{
+    width: 100%;
+    height: 650px;
+    background-size: cover;
+    background: url('../assets/product/Photo-7.png');
+}
+#biologica-content-section .global-health .overlay{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+#biologica-content-section .global-health .overlay-main{
+    background-color: #fff;
+    padding: 30px;
+}
+#biologica-content-section .global-health .overlay-main h2{
+    padding: 10px 0 20px 0;
+    font-size: 36px;
+    font-weight: 700;
+}
+#biologica-content-section .global-health .overlay-main .heading-1 h5{
+    font-size: 20px;
+    font-weight: 700;
+}
+#biologica-content-section .global-health .overlay-main .heading-1 img{
+    width: 100%;
+}
+#biologica-content-section .global-health .overlay-main .heading-1 .text p{
+    font-size: 16px;
+    padding: 30px 100px 0 0;
+}
+#biologica-content-section .global-health .overlay-main .heading-2 h5{
+    font-size: 20px;
+    font-weight: 700;
+}
+#biologica-content-section .global-health .overlay-main .heading-2 img{
+    width: 100%;
+}
+#biologica-content-section .global-health .overlay-main .heading-2 .text p{
+    font-size: 16px;
+    padding: 30px 100px 0 0;
+}
+#biologica-content-section .global-health .overlay-main .button a{
+    font-size: 16px;
+    font-weight: 300;
+    color: #00063c;
+    text-decoration: none;
+    float: right; 
+    margin: 30px 0 0 0;
+}
+#biologica-content-section .global-health .overlay-main .button a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #00063c;
+    transition: width .3s;
+}
+#biologica-content-section .global-health .overlay-main .button a:hover::after {
+    width: 50px;
+    
+}
+
+/* Product Page End */
+
+
+
+/* Footer Start */
+
+/* Footer Background */
+footer{
+    padding: 100px 0 100px 0;
+    background: linear-gradient(to bottom right, #0e0f1b, #0e0f1b, #0e1836, #0e0f1b);
+}
+
+/* Footer Logo */
+footer .footer-logo {
+    text-align: left;
+}
+footer .footer-logo img{
+    width: 80%;
+}
+
+/* Footer Terms & Policy */
+footer .footer-terms-policy{
+    color: #fff;
+    text-align: center;
+}
+footer .footer-terms-policy h5{
+    font-weight: 400;
+}
+footer .footer-terms-policy h5 a{
+    font-weight: 300;
+    color: #fff;
+}
+footer .footer-terms-policy p{
+    color: #c2c2c2;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+/* Footer Social Icons */
+footer .footer-social-icons{
+    margin-top: 10px;
+}
+
+footer .footer-social-icons a.icons-space-1{
+    border-radius: 3px;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #fff;
+    padding: 8px 3px 6px 6px;
+}
+footer .footer-social-icons a.icons-space-1:hover{
+    transition: all ease-in-out 0.3s;
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: #006EAC;
+}
+
+footer .footer-social-icons a.icons-space-2{
+    border-radius: 3px;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #fff;
+    padding: 8px 5.5px 5px 8.5px;
+    margin: 0 10px 0 10px;
+}
+footer .footer-social-icons a.icons-space-2:hover{
+    transition: all ease-in-out 0.3s;
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: #38529A;
+}
+
+footer .footer-social-icons a.icons-space-3{
+    border-radius: 3px;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #fff;
+    padding: 8px 7px 6px 7px;
+}
+footer .footer-social-icons a.icons-space-3:hover{
+    transition: all ease-in-out 0.3s;
+    border: 1px solid #fff;
+    color: #fff;
+    background-color: #28CD41;
+}
+
+footer .footer-social-icons i{
+    font-size: 20px;
+}
+
+/* Footer-Partner-Company */
+footer .footer-partner-company{
+    text-align: center;
+}
+footer .footer-partner-company h5{
+    font-size: 16px;
+    color: #fff;
+}
+footer .footer-partner-company img{
+    width: 45%;
+}
+/* Footer End */
+
+/* Modal Flying Image Start */
+#myModal .modal{
+    transition-delay: 0.5s;
+    transition: all ease-in-out;
+}
+#myModal .flying-img{
+    background: url('../assets/contact/Photo-3.png');
+    height: 500px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+#myModal .flying-text{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background: linear-gradient(to bottom right, #0e0f1b, #0e0f1b, #0e1836, #0e0f1b);
+}
+#myModal .flying-text .text button{
+    margin-top: -45px;
+    font-size: 30px;
+    color: #fff;
+}
+#myModal .flying-text .text{
+    padding: 14.5% 30px;
+    height: 100%;
+}
+#myModal .flying-text .text h3{
+    color: #fff;
+    font-weight: 700;
+}
+#myModal .flying-text .text h5{
+    color: #fff;
+    font-weight: 400;
+}
+#myModal .flying-text .text a{
+    color: #466edb;
+    font-size: 18px;
+    text-decoration: none;
+}
+#myModal .flying-text .text a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #466edb;
+    transition: width .3s;
+}
+#myModal .flying-text .text a:hover::after {
+    width: 50px;
+}
+/* Modal Flying Image End */
