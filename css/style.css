@@ -22,6 +22,11 @@ html{
 }
 #biologica-nav .navbar-brand{
     width: 50%;
+    margin: 0 0 0 4px;
+}
+#biologica-nav .navbar-toggler{
+    padding: 0 !important;
+    margin: 0 6px 0 0;
 }
 #biologica-nav .navbar-brand img{
     width: 50%;
@@ -171,6 +176,9 @@ html{
 #mySidenav .nav-link.active{
     transition: all ease-in-out 0.3s;
     color: #09138b;
+}
+#biologica-nav .navbar-toggler i{
+    color: #fff;
 }
 
 /* SideNav Social Icons */
@@ -840,7 +848,7 @@ input[type=number] {
     color: rgb(8, 7, 7);
     font-weight: 650;
     font-size: 40px;
-    padding-left: 80px;
+    text-align: center;
     text-transform: uppercase;
     /*text-decoration: 8px underline ;*/
     
@@ -911,6 +919,9 @@ input[type=number] {
     background-color: #ededf3;
     border-radius: 0 12px 12px 0;
 }
+#biologica-content-section .product-1-text .text{
+    width: 100%;
+}
 #biologica-content-section .product-1-text .text h5{
     color: #adadad;
     font-weight: 350;
@@ -969,6 +980,9 @@ input[type=number] {
     color: #fff;
     background-color: #242424;
     border-radius: 12px 0 0 12px;
+}
+#biologica-content-section .product-2-text .text{
+    width: 100%;
 }
 #biologica-content-section .product-2-text .text h5{
     color: #adadad;
@@ -1029,6 +1043,9 @@ input[type=number] {
     background-color: #00063c;
     border-radius: 0 12px 12px 0;
 }
+#biologica-content-section .product-3-text .text{
+    width: 100%;
+}
 #biologica-content-section .product-3-text .text h5{
     color: #adadad;
     font-weight: 350;
@@ -1076,9 +1093,6 @@ input[type=number] {
     width: 100%;
     background-color: #f5f6f8;
     border-radius: 0 12px 12px 0;
-    
-
-
 } 
 #biologica-content-section .product-4-text{
     display: flex;
@@ -1087,6 +1101,9 @@ input[type=number] {
     padding: 40px;
     background-color: #ededf3;
     border-radius: 12px 0 0 12px;
+}
+#biologica-content-section .product-4-text .text{
+    width: 100%;
 }
 #biologica-content-section .product-4-text .text h5{
     color: #adadad;
@@ -1147,6 +1164,9 @@ input[type=number] {
     background-color: #050b50;
     border-radius: 0 12px 12px 0;
 }
+#biologica-content-section .product-5-text .text{
+    width: 100%;
+}
 #biologica-content-section .product-5-text .text h5{
     color: #adadad;
     font-weight: 350;
@@ -1204,6 +1224,9 @@ input[type=number] {
     color: #fff;
     background-color: #242424;
     border-radius: 12px 0 0 12px;
+}
+#biologica-content-section .product-6-text .text{
+    width: 100%;
 }
 #biologica-content-section .product-6-text .text h5{
     color: #adadad;
