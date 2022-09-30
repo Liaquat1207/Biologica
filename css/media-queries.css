@@ -44,6 +44,22 @@
         flex-direction: column-reverse;
         
     }
+    #biologica-content-section .product-1 img,
+    #biologica-content-section .product-2 img,
+    #biologica-content-section .product-3 img,
+    #biologica-content-section .product-4 img,
+    #biologica-content-section .product-5 img,
+    #biologica-content-section .product-6 img{
+        border-radius: 12px 12px 0 0;
+    }
+    #biologica-content-section .product-1-text,
+    #biologica-content-section .product-2-text,
+    #biologica-content-section .product-3-text,
+    #biologica-content-section .product-4-text,
+    #biologica-content-section .product-5-text,
+    #biologica-content-section .product-6-text{
+        border-radius: 0 0 12px 12px;
+    }
     /* Product End */
 
     /* Home Start */
@@ -181,6 +197,22 @@
         flex-direction: column-reverse;
         
     }
+    #biologica-content-section .product-1 img,
+    #biologica-content-section .product-2 img,
+    #biologica-content-section .product-3 img,
+    #biologica-content-section .product-4 img,
+    #biologica-content-section .product-5 img,
+    #biologica-content-section .product-6 img{
+        border-radius: 12px 12px 0 0;
+    }
+    #biologica-content-section .product-1-text,
+    #biologica-content-section .product-2-text,
+    #biologica-content-section .product-3-text,
+    #biologica-content-section .product-4-text,
+    #biologica-content-section .product-5-text,
+    #biologica-content-section .product-6-text{
+        border-radius: 0 0 12px 12px;
+    }
     /* Product End */
 
     /* Footer Start */
@@ -235,7 +267,7 @@
         display: none;
     }
     #mobile-contact-banner{
-        background: url('/assets/contact/Photo-1.png');
+        background: url('../assets/contact/Photo-1.png');
         background-size: cover;
         width: 100%;
         height: 500px;
@@ -247,6 +279,7 @@
         text-align: center;
         height: 100%;
         color: #fff;
+        opacity: 0.9;
         background: linear-gradient(to bottom right, #0e0f1b, #0e1836, #0e0f1b);
     }
     #mobile-contact-banner .mobile-banner .banner-text .text h1{
@@ -278,6 +311,22 @@
     #biologica-content-section .product-4,
     #biologica-content-section .product-5{
         margin: 0 0 15px 0;
+    }
+    #biologica-content-section .product-1 img,
+    #biologica-content-section .product-2 img,
+    #biologica-content-section .product-3 img,
+    #biologica-content-section .product-4 img,
+    #biologica-content-section .product-5 img,
+    #biologica-content-section .product-6 img{
+        border-radius: 12px 12px 0 0;
+    }
+    #biologica-content-section .product-1-text,
+    #biologica-content-section .product-2-text,
+    #biologica-content-section .product-3-text,
+    #biologica-content-section .product-4-text,
+    #biologica-content-section .product-5-text,
+    #biologica-content-section .product-6-text{
+        border-radius: 0 0 12px 12px;
     }
     #biologica-content-section .product-6{
         margin: 0;
